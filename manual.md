@@ -4,7 +4,7 @@
 
 через console мы обращаемся к системному терминалу
 
-1. dotnet new console - сщздание нового проекта
+1. dotnet new console - создание нового проекта
 
 2. Console.WriteLine("Hello, World!") - вывод в консоль терминала в новой строке
 

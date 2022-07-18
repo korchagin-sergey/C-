@@ -37,6 +37,7 @@ new Random().Next(min, max)
 ## циклы
 
 1. while
+2. for
 
 ## Массивы
 
@@ -51,3 +52,77 @@ int[]arr = new int[5]{1, 0, 2, 0, 5}
 ## Методы
 
 void - метод не возращает
+имена методов всегда с большой буквы
+переменные с маленькой
+
+
+//Вид 1
+
+void Metod1()
+{
+    Console.WriteLine("Автор .....");
+}
+Metod1();
+
+//Вид 2
+
+не чего не возращают но могут принемать разные аггументы
+
+void Metod2(string msg)
+{
+    ConsoleWriteLine(msg);
+}
+Metod2("text")
+
+void Metod21(string msg, int count)
+{
+    int i = 0;
+    while(i < count)
+    {
+        Console.WriteLine(msg);
+        i++;
+    }
+}
+Metod21("text", 4); //сколько раз мы хотим увидеть вывод
+
+// Вид3
+чтото возращают но не чего не принемают
+
+int Metod3()
+{
+    return DateTime.Now.Year;
+}
+int year = Metod3();
+Console.WriteLine(year);
+
+// Вид 4
+методы что то принемают и чтото возращают
+
+string Metod4(int count, string c)
+{
+    int i = 0;
+    string result = String.Empty; //Пустая страка
+    while(i < count)
+    {
+        result = result + c;
+        i++
+    }
+    reyurn result;
+}
+string res = Metod4(10, "text");
+Console.WriteLine(res);
+
+
+string Metod41(int count, string c)
+{
+    string result = String.Empty; //Пустая страка
+    for(int i = 0; i < count; i++)
+    {
+        result = result + c;
+        
+    }
+    reyurn result;
+}
+string res = Metod41(10, "text");
+Console.WriteLine(res);
+
